@@ -8,7 +8,7 @@ Functions:
 1- Add Note:
 This function enables users to add a new note by entering the note title and content. By clicking the "+Add" button, the note will be displayed on the page.
 
-<img width="468" alt="image" src="https://github.com/hajar163/Notes_App/assets/92683935/e83a7225-10a2-401d-a16a-d324415d2f15">
+<img width="1440" alt="Screen Shot 1445-01-03 at 12 02 57 AM" src="https://github.com/hajar163/Notes_App/assets/92683935/433444b1-89a1-4802-87ae-70ab41f6cdf7">
 
 
 2- List Note:
