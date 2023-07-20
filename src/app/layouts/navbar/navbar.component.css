@@ -1,0 +1,16 @@
+header {
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+h5{
+ color: #fbfbfb;
+}
+.brand{
+    background-color: rgb(228, 131, 89);
+    padding: 10px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <div class="col-md-10">
+            <input type="text" placeholder="Note's title " name="NoteTitle" class="form-control"
+                [(ngModel)]="noteTitle">
+            <br>
+
+            <textarea rows="5" placeholder="Note's content" name="NoteContent" style="white-space:pre-wrap;"
+                class="form-control" [(ngModel)]="noteContent"></textarea>
+
+        </div>
+        <br>
+        <button class="btn-add btn-primary col-3" (click)="addNote()">+ Add</button>
+
+
+
+    </div>
+</div>
+
+<div class="row justify-content-center md-3">
+    <div class="col-md-4 text-center">
+        <h1>Notes</h1>
+    </div>
+</div>
+
+<br>
+
+<div class="row Notes-list justify-content-center md-3" id="notesContainer">
+    <div class="col-md-3" *ngFor="let note of notes">
+
+        <div class="card">
+            <div class="card-body">
+                <div class="clearfix">
+                    <div class="float-left">
+                    </div>
+                    <div class="float-right cat-tools">
+                        <small><i class="fas fa-pencil-alt text-success" (click)="startEditing(note)"></i></small>
+                        <small><i class="fas fa-trash text-danger" (click)="deleteNote(note)"></i></small>
+                    </div>
+                </div>
+                <div class="note-content">
+                    <p style="white-space:pre-wrap;" class="note-title" [contentEditable]="note.isEditing"
+                        (click)="startEditing(note)">{{ note.title
+                        }}</p>
+                    <small class="text-secondary">
+                        <p class="note-card-body" [contentEditable]="note.isEditing" (click)="startEditing(note)">{{
+                            note.content }}</p>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
